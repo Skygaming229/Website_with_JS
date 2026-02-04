@@ -1,8 +1,7 @@
 let rechnung = [];
 let zahl;
 let ergebnis;
-let divident;
-let multipikant;
+
 let zwischenergebnis;
 
 let BTN_addieren = document.getElementById("addButton");
@@ -26,7 +25,6 @@ document.getElementById("outputField");
 BTN_rechnen.addEventListener("click", rechnen);
 
 
-
 if (Nummer1) Nummer1.addEventListener("click", function() { rechnung.push("1"); });
 if (Nummer2) Nummer2.addEventListener("click", function() { rechnung.push("2"); });      
 if (Nummer3) Nummer3.addEventListener("click", function() { rechnung.push("3"); });
@@ -37,15 +35,19 @@ if (Nummer7) Nummer7.addEventListener("click", function() { rechnung.push("7"); 
 if (Nummer8) Nummer8.addEventListener("click", function() { rechnung.push("8"); });
 if (Nummer9) Nummer9.addEventListener("click", function() { rechnung.push("9"); });  
 if (Nummer0) Nummer0.addEventListener("click", function() { rechnung.push("0"); });
-if (BTN_addieren) BTN_addieren.addEventListener("click", function() { rechnung.push("+"); });      
-if (BTN_subtrahieren) BTN_subtrahieren.addEventListener("click", function() { rechnung.push("-"); });
-if (BTN_multiplizieren) BTN_multiplizieren.addEventListener("click", function() { rechnung.push("*"); });
-if (BTN_dividieren) BTN_dividieren.addEventListener("click", function() { rechnung.push("/"); });
+if (BTN_addieren) BTN_addieren.addEventListener("click", function() { 
+     rechnung.push("+");
+ });      
+if (BTN_subtrahieren) BTN_subtrahieren.addEventListener("click", function() { 
+    rechnung.push("-");
 
-
-
-
-
+ });
+if (BTN_multiplizieren) BTN_multiplizieren.addEventListener("click", function() {
+     rechnung.push("*");
+ });
+if (BTN_dividieren) BTN_dividieren.addEventListener("click", function() {
+    rechnung.push("/");
+ });
 
 
 
@@ -57,5 +59,5 @@ function clearRechnung() {
 }
 
 function rechnen() {
-    document.getElementById("outputField").textContent = rechnung;
+    document.getElementById("outputField").textContent = rechnung.join("");
 }

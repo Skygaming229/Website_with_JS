@@ -1,0 +1,68 @@
+header{
+    background-color: #333333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+main
+{
+    display: ;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+    background-color: #f7dddd;
+}
+button
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #444c55;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: #000000;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333333; 
+    overflow: hidden;
+}
+li.Navbar
+{
+    float: left;
+}
+li.Navbar a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.Navbar a:hover
+{
+    background-color: #111111;
+}
+li.Projekte
+{
+    margin: 10px 0;
+}
+li.Projekte a
+{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+li.Projekte a:hover
+{
+    text-decoration: underline;
+    background-color: rgb(255, 0, 0);
+}
